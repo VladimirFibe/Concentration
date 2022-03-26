@@ -56,15 +56,23 @@
 		0216EC9D27EF817D00141D0D /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				0216EC9E27EF817D00141D0D /* AppDelegate.swift */,
-				0216ECA027EF817D00141D0D /* SceneDelegate.swift */,
 				0216ECA227EF817D00141D0D /* ViewController.swift */,
 				0216ECA427EF817D00141D0D /* Main.storyboard */,
-				0216ECA727EF817F00141D0D /* Assets.xcassets */,
-				0216ECA927EF817F00141D0D /* LaunchScreen.storyboard */,
+				0216ECB227EF864200141D0D /* Supporting Files */,
 				0216ECAC27EF817F00141D0D /* Info.plist */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		0216ECB227EF864200141D0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0216EC9E27EF817D00141D0D /* AppDelegate.swift */,
+				0216ECA027EF817D00141D0D /* SceneDelegate.swift */,
+				0216ECA727EF817F00141D0D /* Assets.xcassets */,
+				0216ECA927EF817F00141D0D /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +308,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ilines.nsu.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -329,7 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ilines.nsu.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
