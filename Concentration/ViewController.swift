@@ -61,5 +61,13 @@ class ViewController: UIViewController {
       print("chosen card was not in cardButtons")
     }
   }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    cardButtons.forEach {
+      $0.setTitle("", for: .normal)
+      $0.titleLabel?.font = .systemFont(ofSize: 100)
+    }
+  }
 }
 
