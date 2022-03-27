@@ -13,6 +13,8 @@
 		0216ECA627EF817D00141D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0216ECA427EF817D00141D0D /* Main.storyboard */; };
 		0216ECA827EF817F00141D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0216ECA727EF817F00141D0D /* Assets.xcassets */; };
 		0216ECAB27EF817F00141D0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0216ECA927EF817F00141D0D /* LaunchScreen.storyboard */; };
+		0284635E27F0167D00AFC36A /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284635D27F0167D00AFC36A /* Concentration.swift */; };
+		0284636027F0174F00AFC36A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284635F27F0174F00AFC36A /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0216ECA727EF817F00141D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0216ECAA27EF817F00141D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0216ECAC27EF817F00141D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0284635D27F0167D00AFC36A /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		0284635F27F0174F00AFC36A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				0216ECA227EF817D00141D0D /* ViewController.swift */,
+				0284635D27F0167D00AFC36A /* Concentration.swift */,
+				0284635F27F0174F00AFC36A /* Card.swift */,
 				0216ECA427EF817D00141D0D /* Main.storyboard */,
 				0216ECB227EF864200141D0D /* Supporting Files */,
 				0216ECAC27EF817F00141D0D /* Info.plist */,
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0216ECA327EF817D00141D0D /* ViewController.swift in Sources */,
+				0284635E27F0167D00AFC36A /* Concentration.swift in Sources */,
+				0284636027F0174F00AFC36A /* Card.swift in Sources */,
 				0216EC9F27EF817D00141D0D /* AppDelegate.swift in Sources */,
 				0216ECA127EF817D00141D0D /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Concentration/Info.plist;
@@ -309,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ilines.nsu.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -324,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Concentration/Info.plist;
@@ -339,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ilines.nsu.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
