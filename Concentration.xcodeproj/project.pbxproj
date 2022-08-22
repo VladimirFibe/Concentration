@@ -64,21 +64,21 @@
 				0284635D27F0167D00AFC36A /* Concentration.swift */,
 				0284635F27F0174F00AFC36A /* Card.swift */,
 				0216ECA427EF817D00141D0D /* Main.storyboard */,
-				0216ECB227EF864200141D0D /* Supporting Files */,
-				0216ECAC27EF817F00141D0D /* Info.plist */,
+				E922A21228B3192E0014D524 /* Supporting Files */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
 		};
-		0216ECB227EF864200141D0D /* Supporting Files */ = {
+		E922A21228B3192E0014D524 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0216ECAC27EF817F00141D0D /* Info.plist */,
 				0216EC9E27EF817D00141D0D /* AppDelegate.swift */,
 				0216ECA027EF817D00141D0D /* SceneDelegate.swift */,
 				0216ECA727EF817F00141D0D /* Assets.xcassets */,
 				0216ECA927EF817F00141D0D /* LaunchScreen.storyboard */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +306,7 @@
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,6 +337,7 @@
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
