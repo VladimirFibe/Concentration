@@ -28,6 +28,7 @@
 		0216ECAC27EF817F00141D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0284635D27F0167D00AFC36A /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		0284635F27F0174F00AFC36A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E982C4F528B70FCB00F6B8CE /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				0284635D27F0167D00AFC36A /* Concentration.swift */,
 				0284635F27F0174F00AFC36A /* Card.swift */,
 				0216ECA427EF817D00141D0D /* Main.storyboard */,
+				E982C4F528B70FCB00F6B8CE /* MyPlayground.playground */,
 				E922A21228B3192E0014D524 /* Supporting Files */,
 			);
 			path = Concentration;
