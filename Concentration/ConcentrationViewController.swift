@@ -46,6 +46,7 @@ class ConcentrationViewController: UIViewController {
 
     private func updateViewFromModel() {
         guard !cardButtons.isEmpty else { return }
+
         for index in cardButtons.indices {
             let button = cardButtons[index]
             let card = game.cards[index]
@@ -81,6 +82,7 @@ class ConcentrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(#function)
         setupViews()
         setupConstraints()
         updateViewFromModel()

@@ -11,11 +11,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         let primary = ConcetrationThemeChooserViewController()
-        let secondary = UINavigationController(rootViewController: ConcentrationViewController())
+        let secondary = ConcentrationViewController()
         let controller = UISplitViewController(style: .doubleColumn)
         controller.delegate = primary
+        primary.lastConcentrationViewController = secondary
         controller.setViewController(UINavigationController(rootViewController: primary), for: .primary)
-        controller.setViewController(secondary, for: .secondary)
+        controller.setViewController(UINavigationController(rootViewController: secondary), for: .secondary)
         window?.rootViewController = controller
         window?.makeKeyAndVisible()
         return true

@@ -22,15 +22,26 @@ class ConcetrationThemeChooserViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let controller = ConcentrationViewController()
+        let controller = (splitViewDetailConcentrationViewController ?? lastConcentrationViewController) ?? ConcentrationViewController()
+        lastConcentrationViewController = controller
         controller.theme = themes[indexPath.row].theme
         showDetailViewController(controller, sender: self)
+    }
+
+    var lastConcentrationViewController: ConcentrationViewController?
+
+    private var splitViewDetailConcentrationViewController: ConcentrationViewController? {
+        (splitViewController?.viewControllers.last as? UINavigationController)?.topViewController as? ConcentrationViewController
     }
 }
 
 extension ConcetrationThemeChooserViewController: UISplitViewControllerDelegate {
     func splitViewController(_ splitViewController: UISplitViewController, show vc: UIViewController, sender: Any?) -> Bool {
         true
+    }
+
+    func splitViewController(_ svc: UISplitViewController, topColumnForCollapsingToProposedTopColumn proposedTopColumn: UISplitViewController.Column) -> UISplitViewController.Column {
+        ((svc.viewControllers.last as? ConcentrationViewController)?.theme == nil) ? .primary : .secondary
     }
 }
 
