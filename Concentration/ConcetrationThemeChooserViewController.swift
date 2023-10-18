@@ -1,18 +1,22 @@
 import UIKit
 
-class ConcetrationThemeChooserViewController: UITableViewController {
+class ConcetrationThemeChooserViewController: VCLLoggingViewController, UITableViewDelegate, UITableViewDataSource {
     let themes = ConcetrationTheme.all
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-    }
+    lazy var tableView: UITableView = {
+        view.addSubview($0)
+        $0.delegate = self
+        $0.dataSource = self
+        $0.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        return $0
+    }(UITableView())
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         themes.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.text = themes[indexPath.row].title
@@ -20,7 +24,7 @@ class ConcetrationThemeChooserViewController: UITableViewController {
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let controller = (splitViewDetailConcentrationViewController ?? lastConcentrationViewController) ?? ConcentrationViewController()
         lastConcentrationViewController = controller
@@ -32,6 +36,11 @@ class ConcetrationThemeChooserViewController: UITableViewController {
 
     private var splitViewDetailConcentrationViewController: ConcentrationViewController? {
         (splitViewController?.viewControllers.last as? UINavigationController)?.topViewController as? ConcentrationViewController
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        tableView.frame = view.bounds
     }
 }
 

@@ -1,6 +1,6 @@
 import UIKit
 
-class ConcentrationViewController: UIViewController {
+class ConcentrationViewController: VCLLoggingViewController {
 
     var numberOfPairsOfCards: Int {
         (cardButtons.count + 1) / 2
@@ -82,7 +82,6 @@ class ConcentrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function)
         setupViews()
         setupConstraints()
         updateViewFromModel()
